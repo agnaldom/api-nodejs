@@ -15,3 +15,9 @@ yarn add body-parser
 
 Esse pacote vai ajudar que o node entenda as requesicoes recebendo as informacoes
 em json e tambem que ele possa entender os paramentros da url do http.
+
+```
+yarn add mongoose
+```
+
+Esse pacote faz conexao com o banco de dados Mongodb
