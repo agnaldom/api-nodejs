@@ -21,3 +21,10 @@ yarn add mongoose
 ```
 
 Esse pacote faz conexao com o banco de dados Mongodb
+
+Usamos o programa isonia para consumir o nosso API
+
+```
+yarn add bcryptjs 
+```
+Esse pacote salva senha encryptgrafada
