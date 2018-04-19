@@ -8,7 +8,13 @@ RUN yarn install
 
 COPY . /app
 
-RUN ls /app
+# needs a mongoinstance - defaults to container linking with alias 'mongo
+ENV DEPLOY_METHOD=docker \
+    MODE_ENV=production \
+    MONGO_URL=mongodb://mongo:27017 \
+    HOME=/tmp \
+    PORT=3000 \
+    ROOT_URL=http://localhost:3000 
 
 EXPOSE 3000
 
