@@ -92,7 +92,13 @@ router.post('/forgot_password', async (req, res) =>{
 });
 
 router.post('/reset_password', async (req, res) => {
+    const { email, token, password } = req.body;
 
+    try {
+
+    } catch (err) {
+        res.status(400).send({ error: 'Cannot reset password, try again' });
+    }
 });
 
 module.exports = app => app.use('/auth', router);
