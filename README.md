@@ -29,6 +29,9 @@ yarn add bcryptjs
 ```
 Esse pacote salva senha encryptgrafada
 
+## 2 Parte 
+ autenticar o usuário retornando um token JWT para validar o login em futuras requisições.
+
 # Deployment
 
 ## Docker
