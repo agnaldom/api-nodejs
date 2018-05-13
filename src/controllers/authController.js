@@ -1,5 +1,6 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
 const User = require('../models/User');
 
@@ -32,6 +33,8 @@ router.post('/authenticate', async (req, res) => {
 
     if(!await bcrypt.compare(password, user.password))
         return res.status(400).send({ error: 'Invalid password' });
+
+    const token = jwt.sign({ id: user.id }, )
 
     user.password = undefined;
 
