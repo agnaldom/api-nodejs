@@ -19,5 +19,5 @@ services:
             - /var/lib/docker/volumes/apimongo/_data/db:/data/db 
         ports:
             - "27017:27017"
-        command: mongod --smallfiles --oplogSize 128 --replSet rs0 
+        #command: mongod --smallfiles --oplogSize 128 --replSet rs0 
 
