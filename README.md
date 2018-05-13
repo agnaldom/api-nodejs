@@ -32,6 +32,9 @@ Esse pacote salva senha encryptgrafada
 ## 2 Parte 
  autenticar o usuário retornando um token JWT para validar o login em futuras requisições.
 
+## 3 Parte
+Envio de email e recuperacao de senha
+
 # Deployment
 
 ## Docker
