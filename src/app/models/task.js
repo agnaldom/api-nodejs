@@ -1,14 +1,14 @@
 const mongoose = require('../../database');
 const bcrypt = require('bcryptjs');
 
-const ProjectSchema = new mongoose.Schema({
+const TaskSchema = new mongoose.Schema({
     title: {
         type: String,
         require: true,
     },
-    project: {
+    Task: {
         type:mongoose.Schema.Types.ObjectId,
-        ref: 'Project',
+        ref: 'Task',
         require: true,
     },
     assignedTo: {
@@ -27,7 +27,6 @@ const ProjectSchema = new mongoose.Schema({
     },
 }); 
 
+const Task = mongoose.model('Task', TaskSchema);
 
-const Project = mongoose.model('Project', ProjectSchema);
-
-module.exports = Project;
+module.exports = Task;
