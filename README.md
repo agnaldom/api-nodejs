@@ -42,3 +42,19 @@ Envio de email e recuperacao de senha
 
 [![Rocket.Chat logo](https://d207aa93qlcgug.cloudfront.net/1.95.5.qa/img/nav/docker-logo-loggedout.png)](https://hub.docker.com/r/rocketchat/rocket.chat/)
 
+Rodando o banco de dados Mongo
+
+```
+$ docker-compose up -d mongo
+```
+Rodando api
+
+```
+$ docker-compose up -d api
+```
+
+Lendo os logs
+
+```
+$ docker-compose logs -f
+```
